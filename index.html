@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+        }
+        .container-shadow {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .submit-btn {
+            background-image: linear-gradient(to right, #FF7F50 0%, #FF6347 100%);
+            transition: all 0.3s ease;
+        }
+        .submit-btn:hover {
+            box-shadow: 0 4px 15px rgba(255, 99, 71, 0.4);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- Main Content Card -->
+    <div class="max-w-4xl w-full mx-auto bg-white rounded-3xl container-shadow overflow-hidden lg:flex">
+        
+        <!-- Left Section: Content/Branding -->
+        <div class="lg:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-gray-50">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+                Empower Your Business with <span class="text-red-500">Restaurant App</span> Development
+            </h1>
+            <p class="text-lg text-gray-600 mb-6">
+                Don't Settle For Less. Experience The Best! We provide trendy and essential features for a greater business experience.
+            </p>
+            
+            <div class="space-y-4">
+                <div class="flex items-start">
+                    <svg class="w-6 h-6 text-red-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <p class="ml-3 text-gray-700">Multi-Panel Solution (User, Restaurant, Driver, Admin)</p>
+                </div>
+                <div class="flex items-start">
+                    <svg class="w-6 h-6 text-red-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <p class="ml-3 text-gray-700">Smart Reports & Real-time Analytics</p>
+                </div>
+                <div class="flex items-start">
+                    <svg class="w-6 h-6 text-red-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <p class="ml-3 text-gray-700">Dedicated POS & Promotion Management</p>
+                </div>
+            </div>
+
+            <!-- Trusted By Section -->
+            <div class="mt-8 pt-6 border-t border-gray-200">
+                <p class="text-sm font-semibold text-gray-500 mb-3">Trusted by Partners:</p>
+                <div class="flex space-x-4">
+                    <!-- Placeholder logos/icons -->
+                    <span class="text-xl font-bold text-blue-800">Clutch</span>
+                    <span class="text-xl font-bold text-green-600">Google P</span>
+                    <span class="text-xl font-bold text-orange-600">TopDevelopers</span>
+                    <span class="text-xl font-bold text-yellow-600">aws partner</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section: Request a Quote Form -->
+        <div class="lg:w-1/2 p-6 md:p-8 bg-white">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">Request a Callback</h2>
+            <p class="text-sm text-gray-500 mb-6">We respond promptly, typically within 30 minutes.</p>
+            
+            <!-- FORM START: Now targeting the hidden iframe to bypass CORS -->
+            <form id="quoteForm" method="POST" 
+                  action="https://script.google.com/macros/s/AKfycbz8ITjVZWU6X3IU-szP8j5Mft0w1-_PLnHD19igx0oSVI02wXuSVtD9eoeQmYFfwcY/exec" 
+                  target="hidden_iframe" 
+                  class="space-y-4">
+                
+                <!-- Name -->
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name*</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-red-500 focus:border-red-500">
+                </div>
+                
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address*</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-red-500 focus:border-red-500">
+                </div>
+                
+                <!-- Phone -->
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-red-500 focus:border-red-500">
+                </div>
+
+                <!-- Budget (New Field) -->
+                <div>
+                    <label for="budget" class="block text-sm font-medium text-gray-700">Budget</label>
+                    <input type="text" id="budget" name="budget" placeholder="e.g., $10k - $20k" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-red-500 focus:border-red-500">
+                </div>
+
+                <!-- Message -->
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="3" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-red-500 focus:border-red-500"></textarea>
+                </div>
+                
+                <!-- File Link (Simulated upload) -->
+                <div>
+                    <label for="file_link" class="block text-sm font-medium text-gray-700">File Link (for NDA or Docs)</label>
+                    <input type="url" id="file_link" name="file_link" placeholder="Paste link to GDrive/Dropbox file" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-red-500 focus:border-red-500">
+                </div>
+
+                <!-- Simple CAPTCHA -->
+                <div class="flex items-center space-x-4">
+                    <label for="captcha_result" class="text-sm font-medium text-gray-700">What is 7 + 3?</label>
+                    <input type="number" id="captcha_result" name="captcha_result" required class="w-20 border border-gray-300 rounded-md shadow-sm p-3 focus:ring-red-500 focus:border-red-500">
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn w-full flex justify-center py-3 px-4 border border-transparent rounded-full shadow-lg text-lg font-medium text-white hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                    SUBMIT & GET STARTED
+                </button>
+            </form>
+            
+            <!-- Message Box for Feedback -->
+            <div id="formMessage" class="mt-4 hidden p-3 rounded-md text-center"></div>
+
+        </div>
+    </div>
+    
+    <!-- Hidden iframe for submission - CRITICAL FIX FOR CORS ISSUE -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted) { handleIframeLoad(); }"></iframe>
+
+    <script>
+        // CRITICAL FIX: Define submitted in the global scope for the iframe to access it
+        window.submitted = false; 
+
+        const form = document.getElementById('quoteForm');
+        const submitButton = form.querySelector('button[type="submit"]');
+        const formMessage = document.getElementById('formMessage');
+
+        // Function to update the message box
+        function displayMessage(message, isSuccess) {
+            formMessage.textContent = message;
+            formMessage.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'bg-green-100', 'text-green-700');
+            if (isSuccess) {
+                formMessage.classList.add('bg-green-100', 'text-green-700');
+            } else {
+                formMessage.classList.add('bg-red-100', 'text-red-700');
+            }
+        }
+        
+        // Handler called when the hidden iframe receives the script's response
+        window.handleIframeLoad = function() {
+            submitButton.disabled = false;
+            submitButton.textContent = 'SUBMIT & GET STARTED';
+            
+            // Assume success since the form was submitted successfully and the script is authorized
+            displayMessage('Success! Your quote request has been sent. We will call you back shortly.', true);
+            form.reset(); // Clear the form on success
+            window.submitted = false; // Reset the flag
+        };
+
+
+        form.addEventListener('submit', (e) => {
+            // CAPTCHA check
+            const captchaInput = document.getElementById('captcha_result');
+            if (parseInt(captchaInput.value) !== 10) {
+                e.preventDefault(); // Block submission if CAPTCHA is wrong
+                displayMessage("Incorrect CAPTCHA result. Please try again.", false);
+                return;
+            }
+
+            // If CAPTCHA is correct, allow the native form submission to the hidden iframe
+            window.submitted = true; // Set flag to activate iframe onload handler
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+
+            // We do NOT call e.preventDefault() here, allowing the form to submit to the iframe.
+            // The form will submit to the URL in the 'action' attribute, targeting the 'hidden_iframe'
+        });
+    </script>
+</body>
+</html>
