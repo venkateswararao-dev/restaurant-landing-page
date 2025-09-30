@@ -509,7 +509,113 @@ button {
 
 .bde{
   background-color: white;
-  padding-top: 2%;
+  padding-top: 1%;
   
   height: auto;
+}
+.czech{
+  background-color: lch(51.25% 74.55 136.59);
+  
+  margin-left: 10px;
+  margin-right: 10px;
+   border-radius: 0 0 20px 20px;
+}
+#para{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 60px;
+}
+#para1{
+  text-align: center;
+  padding-top: 20px;
+  color: lightgreen;
+  font-size: 20px;
+}
+#para2{
+  text-align: center;
+  color: lightgreen;
+  font-size: 20px;
+}
+.panel-container{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.panel{
+  background-color: white;
+  padding: 2%;
+  margin-top: 6%;
+  width: 220px;
+  height: 250px;
+  margin-left: 6%;
+  margin-bottom: 2%;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.panel-icon{
+  width: 75px;     /* adjust size */
+  height: 80px;
+  padding-top: 5%;
+  margin-bottom: 15px;
+}
+#admin-para{
+  text-align: center;
+  
+  font-weight: bold;
+}
+#next{
+  padding-top: 100px;
+  text-align: center;
+  
+  font-size: 30px;
+  color: white;
+}
+.panel2{
+  background-color: white;
+  padding: 3%;
+  margin-top: 6%;
+  width: 245px;
+  height: 270px;
+  margin-left: 6%;
+  margin-bottom: 2%;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;  /* important for absolute positioning */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.addon-label {
+  position: absolute;
+  top: -1px;     /* float slightly above panel */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff5722;  /* red-orange */
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+.panel:hover {
+   transform: translateY(-20px) scale(1.12); /* bigger lift + zoom */
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35); /* stronger shadow */
+  border: 2px solid rgba(0, 0, 0, 0.1); /* optional subtle border */
+}
+.panel.active {
+  background-color: black;
+  color: white;
+}
+.panel2:hover {
+  transform: translateY(-30px) scale(1.2); /* big lift + zoom */
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45), 
+              0 0 25px rgba(255, 215, 0, 0.7); /* deep + golden glow */
+  border: 2px solid gold; /* premium border */
+}
+.panel2.active {
+  background-color: gold;
+  color: black;
 }

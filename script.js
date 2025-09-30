@@ -46,3 +46,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+// Script for click toggle
+document.addEventListener("DOMContentLoaded", () => {
+  const panels = document.querySelectorAll(".panel");
+
+  panels.forEach(panel => {
+    panel.addEventListener("click", () => {
+      // remove active from all panels first
+      panels.forEach(p => p.classList.remove("active"));
+      // add active to clicked one
+      panel.classList.add("active");
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const panels = document.querySelectorAll(".panel, .panel2");
+
+  panels.forEach(panel => {
+    panel.style.cursor = "pointer"; // visual feedback
+    panel.addEventListener("click", () => {
+      panels.forEach(p => p.classList.remove("active"));
+      panel.classList.add("active");
+    });
+  });
+});
+
+
