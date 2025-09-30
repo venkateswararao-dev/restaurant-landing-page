@@ -70,5 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
+function addText(card) {
+  let userText = prompt("Enter your text:");
+  if (userText) {
+    card.querySelector(".t2").textContent = userText;
+  }
+}
 

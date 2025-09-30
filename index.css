@@ -519,6 +519,7 @@ button {
   margin-left: 10px;
   margin-right: 10px;
    border-radius: 0 0 20px 20px;
+  
 }
 #para{
   color: white;
@@ -619,3 +620,76 @@ button {
   background-color: gold;
   color: black;
 }
+.ok{
+  background-color: white;
+  padding-top: 60px;
+}
+.new{
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+.new1{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  
+}
+.new2{
+  padding: 2%;
+  width: 380px;
+  cursor: pointer;
+  min-height: 350px;
+  gap: 10px;
+  height: 250px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.797);
+  border:2px,solid,whitesmoke;
+}
+.row{
+  display: flex;            /* icon + heading side by side */
+  align-items: center;
+  gap: 10px;
+
+}
+.im1{
+  width: 45px;
+  height:40px
+}
+.new3{
+  width: 70px;
+  height:70px;
+  padding: 3%;
+  padding-left: 6%;
+  padding-top: 5%;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+}
+.new4{
+  width: 70px;
+  height:70px;
+  padding: 3%;
+   padding-left: 4%;
+  padding-top: 5%;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+}
+.t1{
+  flex: 1;
+  word-wrap: break-word;
+  padding-top: 10px;
+  font-size: 22px;
+  padding-left: 2%;
+  font-weight: bold;
+}
+.t2{
+  padding-top: 50px;
+  padding-left: 50px;
+  font-size: 90px;
+  font-weight: bold;
+  color: #FF00FF;
+}
+
+
