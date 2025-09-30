@@ -484,6 +484,11 @@
   background-color: white;
   width: 90%;
 }
+button {
+  all: unset;        /* removes browser’s default button look */
+  cursor: pointer;   /* make them clickable */
+}
+
 .cde {
   width: 100%;             /* take full container width */
   display: flex;           /* optional: center image */

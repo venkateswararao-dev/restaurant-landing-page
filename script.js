@@ -32,3 +32,19 @@ form.addEventListener('submit', () => {
   submitButton.disabled = true;
   submitButton.textContent = 'Sending...';
 });
+
+document.querySelector(".one").addEventListener("click", () => {
+  alert("User Panel clicked!");
+});
+
+document.querySelector(".two").addEventListener("click", () => {
+  alert("Restaurant Panel clicked!");
+});
+
+document.querySelector(".three").addEventListener("click", () => {
+  alert("Driver Panel clicked!");
+});
+
+document.querySelector(".ten").addEventListener("click", () => {
+  alert("Admin Panel clicked!");
+});
