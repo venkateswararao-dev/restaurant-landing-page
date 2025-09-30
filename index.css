@@ -449,8 +449,8 @@
   width: 180px;
   align-items: center;
   text-align: center;
-  color: white;
-  background-color: #222;
+  color:black;
+  background-color:whitesmoke;
 }
 .two{
    border:2px,solid,white;
@@ -487,6 +487,10 @@
 button {
   all: unset;        /* removes browser’s default button look */
   cursor: pointer;   /* make them clickable */
+}
+.adit button.active {
+  background-color: black !important;
+  color: white !important;
 }
 
 .cde {

@@ -33,18 +33,16 @@ form.addEventListener('submit', () => {
   submitButton.textContent = 'Sending...';
 });
 
-document.querySelector(".one").addEventListener("click", () => {
-  alert("User Panel clicked!");
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".adit button");
 
-document.querySelector(".two").addEventListener("click", () => {
-  alert("Restaurant Panel clicked!");
-});
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      // Reset all buttons to original state
+      buttons.forEach(btn => btn.classList.remove("active"));
 
-document.querySelector(".three").addEventListener("click", () => {
-  alert("Driver Panel clicked!");
-});
-
-document.querySelector(".ten").addEventListener("click", () => {
-  alert("Admin Panel clicked!");
+      // Activate clicked button
+      button.classList.add("active");
+    });
+  });
 });
