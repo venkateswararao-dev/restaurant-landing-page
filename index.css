@@ -647,6 +647,7 @@ button {
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.797);
   border:2px,solid,whitesmoke;
+  margin-bottom: 30px;
 }
 .row{
   display: flex;            /* icon + heading side by side */
@@ -691,5 +692,63 @@ button {
   font-weight: bold;
   color: #FF00FF;
 }
+.t3{
+  
+  background-color:#EA4470;
+}
+.t4{
+  padding-top: 120px;
+  padding-left: 30px;
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.t5{
+  padding-left: 30px;
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.t6{
+  padding-left: 29px;
+  color: rgba(255, 255, 255, 0.854);
+  padding-top: 5px;
+}
+.t7{
+  margin-top: 40px;
+  margin-left: 30px;
+  padding:10px;
+  width:220px;
+  background-color: red;
+  border-radius: 45px;
+  text-align: center;
+  color: white;
+}
+.t8{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.t9{
+  width: 420px;
+  height: 360px;
+  background-blend-mode: multiply;
+  object-fit: cover;
+}
+.t10{
+  padding-top: 20px;
+  width: 620px;
+  margin-left: 28%;
+  height: auto;
+  transition: transform 1s linear;
 
-
+}
+.t10:hover{
+  transform: rotate(-10deg);
+}
+.t11{
+  background-color: white;
+  
+}
