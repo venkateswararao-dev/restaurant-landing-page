@@ -752,3 +752,114 @@ button {
   background-color: white;
   
 }
+.t12{
+  background-color: lightcyan;
+}
+.t13{
+  padding-top: 20px;
+  text-align: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.t14{
+  padding-top: 10px;
+  font-size:80px;
+  text-align: center;
+  color: darkorange;
+  font-weight: bold;
+}
+.t15{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  
+}
+.t16{
+  margin-top: 20px;
+  width: 420px;
+  
+  background-color: white;
+  border: 1px,solid,black;
+  border-radius: 20px;
+}
+.t17{
+  padding-top: 30px;
+  text-align: center;
+  
+}
+.t19{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 180px;
+}
+.t18{
+  width: 320px; 
+}
+.s2{
+  padding-top: 60px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.s1{
+  width: 240px;
+  background-color: red;
+  border-radius: 30px;
+  padding: 12px;
+  color: white;
+}
+.protfolio-section{
+  background-color: white;
+}
+.proto{
+  padding-top: 60px;
+  padding-left: 45px;
+}
+#proto{
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 800;
+}
+#proto1{
+  padding-top: 15px;
+  font-size: 28px;
+  font-weight: lighter;
+}
+.proto2{
+  background-color: lightseagreen;
+  display: flex;
+  
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.proto3{
+  width: 950px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+.proto4{
+  padding-left: 90px;
+  padding-top:185px;
+}
+.proto5{
+  background-color: orange;
+  display: flex;
+  border-radius: 20px;
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-top: 20px;
+
+}
+.proto6{
+  width: 950px;
+  padding-left: 45px;
+  padding-bottom: 15px;
+}
+.proto7{
+  padding-top: 90px;
+  text-align: center;
+  padding-bottom: 50px;
+}
