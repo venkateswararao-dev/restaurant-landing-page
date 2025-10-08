@@ -76,4 +76,35 @@ function addText(card) {
     card.querySelector(".t2").textContent = userText;
   }
 }
+const buttons = document.querySelectorAll('.r2');
+const container = document.getElementById('image-container');
+
+// Example images for each button
+const images = {
+  mobile: ["images/image46.png", "images/image47.png"],
+  ai: ["images/gemini.png", "images/chatgpt.png"],
+  frontend: ["images/image10.png", "https://assets.browserlondon.com/wp-content/uploads/2019/03/pwa-banner.png"],
+  backend: ["https://seekvectors.com/files/download/a712a94bb84b68697d537aa71ac13513.jpg", "https://static.frontendmasters.com/resources/2018-03-27-sql/thumb.jpg"],
+  devops: ["images/image48.png", "images/image49.png"],
+  android: ["images/android1.png", "images/android2.png"]
+};
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Reset active state
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // Get target category
+    const target = btn.getAttribute('data-target');
+    const imgs = images[target];
+
+    // Clear and add new hex images
+    container.innerHTML = imgs.map(src => `
+      <div class="hex">
+        <img src="${src}" alt="">
+      </div>
+    `).join('');
+  });
+});
 
